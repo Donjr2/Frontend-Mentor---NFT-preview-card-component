@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url(fonts/Outfit-VariableFont_wght.ttf) format('truetype');
+  font-display: swap;
+}
+
+:root {
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --veryDarkBlueMainBG: hsl(217, 54%, 11%);
+  --veryDarkBlueCardBG: hsl(216, 50%, 16%);
+  --veryDarkBlueLine: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  color: var(--softBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-area {
+  width: 1440px;
+  height: 100%;
+  background: var(--veryDarkBlueMainBG);
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 350px;
+  height: auto;
+  background: var(--veryDarkBlueCardBG);
+  border-radius: 15px;
+  padding: 24px;
+  box-shadow: 0 22px 0 16px var(--veryDarkBlueMainBG),
+    0 20px 0 48px hsla(216, 50%, 16%, 0.1);
+}
+
+.card img {
+  border-radius: 8px;
+}
+
+.card h1 {
+  font-weight: 600;
+  padding: 18px 0;
+}
+.card h1 a:active,
+.card h1 a:hover {
+  color: var(--cyan);
+}
+.card h1 a {
+  font-size: 22px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 26px;
+}
+.eth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--veryDarkBlueLine);
+}
+.eth h2 {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--cyan);
+}
+.eth h2 img {
+  padding-right: 7px;
+}
+.eth p {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+.eth p img {
+  padding-right: 6px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 16px 0 8px;
+}
+.profile img {
+  width: 33px;
+  height: auto;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  margin-right: 16px;
+}
+.profile a {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--white);
+  text-decoration: none;
+}
+.profile a:active,
+.profile a:hover {
+  color: var(--cyan);
+}
+.profile a span {
+  color: var(--softBlue);
+}
